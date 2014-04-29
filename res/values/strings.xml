@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bottles and Kegs</string>
+    <string name="expert">Expert</string>
+    <string name="add_number">Next</string>
+    <string name="invalid_number">Invalid Number</string>
+
+</resources>
