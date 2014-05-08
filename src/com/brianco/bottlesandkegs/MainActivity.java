@@ -36,8 +36,10 @@ public class MainActivity extends Activity {
 		private ArrayAdapter mAdapter;
 		private List<String> mNumbersArray;
 		private Button mButton;
+		private BottlesAndKegs mBottlesAndKegs;
 
 		public MyFragment() {
+			mBottlesAndKegs = new BottlesAndKegs();
 		}
 
 		@Override
@@ -66,7 +68,7 @@ public class MainActivity extends Activity {
 						return;
 					}
 					boolean beginner = !mSwitch.isChecked();
-					mNumbersArray.add(Util.kegs(beginner, num));
+					mNumbersArray.add(mBottlesAndKegs.bottlesAndKegs(beginner, num));
 					mAdapter.notifyDataSetChanged();
 					mEditText.setText(String.valueOf(++num));
 					mLv.setSelection(mLv.getCount() - 1);
